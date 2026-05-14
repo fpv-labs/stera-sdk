@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stera-sdk"
+version = "0.0.1"
+description = "SDK for processing data from Stera's mobile app: MCAP loading, visualization, and annotation"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+authors = [{name = "FPV Labs", email = "pratyush@fpvlabs.ai"}]
+keywords = [
+    "fpv",
+    "fpvlabs",
+    "fpvlabs.ai",
+    "egocentric",
+    "exocentric",
+    "ego",
+    "exo",
+    "robotics",
+    "mcap",
+    "hand-tracking",
+    "face-blur",
+    "rerun",
+    "mediapipe",
+    "wilor",
+    "hamer",
+    "first-person-video",
+    "vla", "world-models"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = [
+    "numpy>=1.24,<2",
+    "opencv-python>=4.8",
+    "rerun-sdk>=0.22",
+    "h5py>=3.8",
+    "tqdm>=4.65",
+    "mcap>=1.1",
+    "mcap-ros2-support>=0.5",
+    "plotly>=5.18",
+]
+
+[project.urls]
+Homepage = "https://fpvlabs.ai"
+Repository = "https://fpvlabs.ai"
+Issues = "https://fpvlabs.ai"
+
+# Optional extras
+[project.optional-dependencies]
+mediapipe = ["mediapipe>=0.10"]
+retinaface = ["batch-face>=1.4"]
+# MeshRefiner: cleanup + densify + clutter-strip + plane-fill.
+# Colorize-only path runs on the core deps; everything else needs this extra.
+mesh = [
+    "pymeshlab>=2023.12",
+    "pyransac3d>=0.6",
+    "scipy>=1.10",
+    "matplotlib>=3.6",
+]
+# Everything except dev-only tooling. Use this if you don't want to think
+# about which extras you need.
+all = [
+    "mediapipe>=0.10",
+    "batch-face>=1.4",
+    "pymeshlab>=2023.12",
+    "pyransac3d>=0.6",
+    "scipy>=1.10",
+    "matplotlib>=3.6",
+]
+dev = ["pytest>=7.0", "ruff>=0.1", "build>=1.0", "twine>=4.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
