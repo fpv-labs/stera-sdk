@@ -3,8 +3,12 @@
 from __future__ import annotations
 
 import logging
+from importlib.metadata import PackageNotFoundError, version as _pkg_version
 
-__version__ = "0.0.1"
+try:
+    __version__ = _pkg_version("stera-sdk")
+except PackageNotFoundError:
+    __version__ = "0.0.0+unknown"
 
 _LOG_FORMAT = "%(asctime)s %(levelname)-7s %(name)s: %(message)s"
 _DATE_FORMAT = "%H:%M:%S"

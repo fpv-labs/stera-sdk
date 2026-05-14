@@ -4,15 +4,15 @@
 </h1>
 <p align="center">by <a href="https://fpvlabs.ai">FPV Labs</a> (<a href="https://fpvlabs.ai">fpvlabs.ai</a>)</p>
 
-<h1 align="center">
-  <a href="https://pypi.org/project/stera-sdk/">     <img alt="PyPI"    src="https://img.shields.io/pypi/v/stera-sdk.svg"></a>
-  <a href="https://pypi.org/project/stera-sdk/">     <img alt="Python"  src="https://img.shields.io/pypi/pyversions/stera-sdk.svg"></a>
-  <a href="LICENSE">                                 <img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue.svg"></a>
-</h1>
+<p align="center">
+  <a href="https://pypi.org/project/stera-sdk/"><img alt="PyPI" src="https://img.shields.io/pypi/v/stera-sdk?color=4c8bf5"></a>
+  <a href="https://pypi.org/project/stera-sdk/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/stera-sdk?color=4c8bf5"></a>
+  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
+</p>
 
 <a href="https://apps.apple.com/us/app/fpv-labs/id6756263398"><img src="assets/app-qr.svg" alt="Scan to get the iOS app" width="96" align="right"></a>
 
-`stera-sdk` is the Python SDK behind *Stera* ([website](https://fpvlabs.ai/stera) · [iOS app](www.fpvlabs.ai/app)).
+`stera-sdk` is the Python SDK behind *Stera* ([website](https://fpvlabs.ai/stera) · [iOS app](https://apps.apple.com/us/app/fpv-labs/id6756263398)).
 
 Load MCAP recordings, run swappable hand, face, and skeleton models behind one schema,
 and visualize or export clean episodes, ready for embodied AI, VLAs, and world models.
