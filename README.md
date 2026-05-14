@@ -1,8 +1,5 @@
 <h1 align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo_dark.png">
-    <img alt="" src="assets/logo_light.png" height="32" align="center" style="vertical-align: middle;">
-  </picture>
+  <img alt="" src="assets/logo_light.png" height="32" align="center" style="vertical-align: middle;">
    Stera SDK
 </h1>
 <p align="center">by <a href="https://fpvlabs.ai">FPV Labs</a> (<a href="https://fpvlabs.ai">fpvlabs.ai</a>)</p>
@@ -48,7 +45,7 @@ Evaluate(session).show()                       # interactive HTML QC report
 ```
 
 <p align="center">
-  <video src="assets/hero-loop-light.mp4" poster="assets/hero-loop-light.jpg" controls muted loop playsinline></video>
+  <img src="assets/hero.png" alt="Stera SDK">
 </p>
 
 ## Getting started
