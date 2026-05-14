@@ -17,7 +17,7 @@
 Load MCAP recordings, run swappable hand, face, and skeleton models behind one schema,
 and visualize or export clean episodes, ready for embodied AI, VLAs, and world models.
 
-### A short taste
+### Quick Start
 
 ```python
 import stera
@@ -54,16 +54,12 @@ Evaluate(session).show()                       # interactive HTML QC report
 pip install "stera-sdk[all]"
 ```
 
-That pulls the core SDK plus MediaPipe, RetinaFace, and `MeshRefiner` deps.
-WiLoR, HaMeR, and EgoBlur ship as separate research repos, see the [installation guide](https://admirable-toffee-75133f.netlify.app/docs/process/get-started/installation).
-`ffmpeg` must be on `PATH` for episode export.
-
 ## Documentation
 
-- 📚 [Docs](https://admirable-toffee-75133f.netlify.app/docs)
-- 🚀 [Quickstart](https://admirable-toffee-75133f.netlify.app/docs/process/get-started/quickstart)
-- ⚙️ [API reference](https://admirable-toffee-75133f.netlify.app/docs/process/api)
-- 🛠️ [Installation](https://admirable-toffee-75133f.netlify.app/docs/process/get-started/installation)
+- 📚 [Docs](https://fpvlabs.ai/docs)
+- 🚀 [Quickstart](https://fpvlabs.ai/docs/process/get-started/quickstart)
+- ⚙️ [API reference](https://fpvlabs.ai/docs/process/api)
+- 🛠️ [Installation](https://fpvlabs.ai/docs/process/get-started/installation)
 
 ## License
 
