@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stera-sdk"
-version = "0.0.1"
+version = "0.0.2"
 description = "SDK for processing data from Stera's mobile app: MCAP loading, visualization, and annotation"
 readme = "README.md"
 license = {text = "Apache-2.0"}
