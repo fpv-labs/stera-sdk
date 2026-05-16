@@ -10,9 +10,9 @@
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 </p>
 
-<a href="https://apps.apple.com/us/app/fpv-labs/id6756263398"><img src="assets/app-qr.svg" alt="Scan to get the iOS app" width="96" align="right"></a>
+<a href="https://fpvlabs.ai/app"><img src="assets/app-qr.svg" alt="Scan to get the iOS app" width="96" align="right"></a>
 
-`stera-sdk` is the Python SDK behind *Stera* ([website](https://fpvlabs.ai/stera) · [iOS app](https://apps.apple.com/us/app/fpv-labs/id6756263398)).
+`stera-sdk` is the Python SDK behind *Stera* ([website](https://fpvlabs.ai/stera) · [iOS app](https://fpvlabs.ai/app)).
 
 Load MCAP recordings, run swappable hand, face, and skeleton models behind one schema,
 and visualize or export clean episodes, ready for embodied AI, VLAs, and world models.
@@ -56,10 +56,10 @@ pip install "stera-sdk[all]"
 
 ## Documentation
 
-- 📚 [Docs](https://fpvlabs.ai/docs)
-- 🚀 [Quickstart](https://fpvlabs.ai/docs/process/get-started/quickstart)
-- ⚙️ [API reference](https://fpvlabs.ai/docs/process/api)
-- 🛠️ [Installation](https://fpvlabs.ai/docs/process/get-started/installation)
+- 📚 [Docs](https://fpvlabs.ai/stera/docs)
+- 🚀 [Quickstart](https://fpvlabs.ai/stera/docs/process/get-started/quickstart)
+- ⚙️ [API reference](https://fpvlabs.ai/stera/docs/process/api)
+- 🛠️ [Installation](https://fpvlabs.ai/stera/docs/process/get-started/installation)
 
 ## License
 
