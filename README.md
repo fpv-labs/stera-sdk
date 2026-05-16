@@ -56,10 +56,10 @@ pip install "stera-sdk[all]"
 
 ## Documentation
 
-- 📚 [Docs](https://fpvlabs.ai/docs)
-- 🚀 [Quickstart](https://fpvlabs.ai/docs/process/get-started/quickstart)
-- ⚙️ [API reference](https://fpvlabs.ai/docs/process/api)
-- 🛠️ [Installation](https://fpvlabs.ai/docs/process/get-started/installation)
+- [Docs](https://www.fpvlabs.ai/stera/docs)
+- [Quickstart](https://www.fpvlabs.ai/stera/docs/process/get-started/quickstart)
+- [Installation](https://www.fpvlabs.ai/stera/docs/process/get-started/installation)
+- [API reference](https://www.fpvlabs.ai/stera/docs/process/api/mcap-reader)
 
 ## License
 
