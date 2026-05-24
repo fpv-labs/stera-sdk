@@ -38,7 +38,7 @@ We love hearing ideas for new features or infrastructure improvements! To propos
 
 ## 🚀 Pull Request (PR) Guidelines
 
-We welcome contributions from the community to make this a vibrant open source effort. Its recommended to communicate your plan for feature development upfront through our discord or raise a pull request explaining what you plan to do. To get your PR reviewed and merged quickly, please adhere to the following workflow:
+We welcome contributions from the community to make this a vibrant open source effort. Its recommended to communicate your plan for feature development, in the same format as a feature request template to explain what you plan to do, or initiate some upfront conversation through our discord (fpvlabs.ai/discord). To get your PR reviewed and merged quickly, please adhere to the following workflow:
 
 ### 1. Branch Strategy & Scoping
 * **One Feature Per PR:** Keep PRs atomic. Do not bundle unrelated changes, bug fixes, and formatting updates into a single PR.
