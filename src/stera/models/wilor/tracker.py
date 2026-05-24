@@ -624,14 +624,16 @@ class WiLoRHandTracker:
                      is_left=False, sample_radius=7, image_is_rotated=True):
         sx, sy = dw / rgb_w, dh / rgb_h
         z_real = None
-        anchor_u = anchor_v = None
 
+        # ANCHOR_JOINTS is only a priority list for finding a *valid depth value*
+        # (the wrist is often occluded or sits on a depth discontinuity). The
+        # anchor *pixel* is always the wrist, because joints_rel below is
+        # wrist-relative; anchoring on a different joint shifts the whole hand.
         for ai in ANCHOR_JOINTS:
             u_d, v_d = kpts_2d_rgb[ai, 0] * sx, kpts_2d_rgb[ai, 1] * sy
             z = WiLoRHandTracker._sample_depth(depth_img, u_d, v_d, dw, dh, sample_radius)
             if z is not None:
                 z_real = z
-                anchor_u, anchor_v = u_d, v_d
                 break
 
         if z_real is None:
@@ -643,8 +645,9 @@ class WiLoRHandTracker:
             if len(zs) < 3:
                 return None, None
             z_real = np.median(zs)
-            anchor_u, anchor_v = kpts_2d_rgb[0, 0] * sx, kpts_2d_rgb[0, 1] * sy
 
+        # Back-project the wrist pixel at the resolved depth (see note above).
+        anchor_u, anchor_v = kpts_2d_rgb[0, 0] * sx, kpts_2d_rgb[0, 1] * sy
         anchor_real = np.array([(anchor_u - cx) * z_real / fx, (anchor_v - cy) * z_real / fy, z_real])
         joints_rel = joints_cam - joints_cam[0:1]
         if is_left:
